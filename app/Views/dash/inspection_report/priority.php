@@ -1,0 +1,61 @@
+<?php
+
+ namespace inspection_report\priority;
+
+ const priority1 = "Medium";
+ const priority2 = "High";
+const priority3 = "Low";
+const priority4 = "Low";
+const priority5 = "Low";
+const priority6 = "Low";
+const priority7 = "Low";
+const priority8 = "Low";
+const priority9 = "Low";
+const priority10 = "Low";
+const priority11 = "Low";
+const priority12 = "Low";
+const priority13 = "High";
+const priority14 = "Low";
+const priority15 = "Low";
+const priority16 = "Low";
+const priority17 = "High";
+const priority18 = "High";
+const priority19 = "Low";
+const priority20 = "Medium";
+const priority21 = "Low";
+const priority22 = "High";
+const priority23 = "Medium";
+const priority24 = "Medium";
+const priority25 = "High";
+const priority26 = "Low";
+const priority27 = "Low";
+const priority28 = "Low";
+const priority29 = "Low";
+const priority30 = "High";
+const priority31 = "Low";
+const priority32 = "Low";
+const priority33 = "High";
+const priority34 = "High";
+const priority35 = "High";
+const priority36 = "High";
+const priority37 = "High";
+const priority38 = "High";
+const priority39 = "High";
+const priority40 = "High";
+const priority41 = "Low";
+const priority42 = "Low";
+const priority43 = "Low";
+const priority44 = "High";
+const priority45 = "Low";
+const priority46 = "Low";
+const priority47 = "Low";
+const priority48 = "Low";
+const priority49 = "Low";
+const priority50 = "High";
+const priority51 = "High";
+const priority52 = "High";
+const priority53 = "Low";
+const priority54 = "Low";
+const priority55 = "Low";
+
+?>

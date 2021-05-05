@@ -1,0 +1,339 @@
+:root {
+  --color-purple: #572155;
+  --color-yellow: #BD9413;
+}
+
+body {
+  font-family: system-ui;
+}
+
+header, nav {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid var(--color-purple);
+}
+
+a {
+  color: black;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav {
+  padding-left: 1rem;
+}
+
+:focus {
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--color-purple);
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: .8rem;
+  border: 1px solid lightgrey;
+  margin: 4px;
+  background: none;
+  outline: none;
+}
+.btn:hover,
+.btn:focus {
+  background: var(--color-purple);
+  color: white;
+  cursor: pointer;
+}
+
+.nav__links {
+  display: flex;
+  padding: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  padding: .4rem .8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 1rem;
+  text-align: center;
+}
+.nav__link--selected {
+  color: var(--color-purple);
+  font-weight: bold;
+}
+
+.nav__title {
+  margin-right: 4rem;
+}
+
+.logo-container {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.muted-text {
+  color: grey;
+}
+
+.highlight-text {
+  color: var(--color-purple);
+  font-weight: bold;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%; margin: 0 .5rem;
+}
+
+.header__item:last-child {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* tabs */
+
+.tab-container {
+  padding: 1rem;
+}
+
+.tab-container > * {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar {
+  margin-bottom: 1rem;
+}
+
+.top-bar > span {
+  margin-right: .5rem;
+}
+
+.top-bar__button {
+  width: 32px;
+  height: 32px;
+  color: white;
+  background: darkgrey;
+  border: none;
+  border-radius: 2px;
+}
+
+.tool-bar {
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+
+.tool-bar__button {
+  margin: 0;
+  padding: .5rem .8rem;
+  border: 1px solid lightgrey;
+  background: white;
+  border-radius: 4px;
+}
+
+.tool-bar > div:nth-child(2) {
+  margin: 0 1.8rem;
+}
+
+/* table */
+
+.table-container {
+  padding: 1rem;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+
+.action-column {
+  width: 8%;
+}
+
+th {
+  font-weight: 700;
+}
+
+th, td {
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 0.5rem .4rem;
+}
+
+th:first-child, td:first-child {
+  max-width: 10%;
+  white-space: nowrap;
+}
+
+td.left-aligned {
+  text-align: left;
+}
+
+.update_form-btn-container {
+  display: inline;
+}
+
+/* pop up */
+
+.draggable-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px var(--color-purple) solid;
+  padding: 1.5rem;
+  border-radius: 4px;
+  overflow-y: scroll;
+}
+.draggable-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable {
+}
+
+.editor-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  column-gap: 1rem;
+}
+
+.section-header {
+  grid-column: 1 / -1;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 1.2rem;
+  color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px;
+  width: 100%;
+}
+
+select {
+  border-radius: 4px;
+  border: solid 1px lightgray;
+  padding: .5rem .8rem;
+}
+
+select, input.form-group__input {
+  width: 200px;
+}
+
+input:read-only {
+  background: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* form elements */
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input {
+  padding: .4rem .6rem;
+  border-radius: 4px;
+  margin-top: 4px;
+  border: solid 1px lightgray;
+}
+
+/* login */
+
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  justify-self: start;
+  border-radius: 8px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-purple);
+}
+
+.submit-btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: #572155 1px solid;
+  margin-top: 1.2rem;
+  padding: 1rem 1.5rem;
+}
+
+.form-field {
+  margin-bottom: .5rem;
+}
+
+.main-logo--wide {
+  width: 50%;
+  justify-self: end;
+}
+
+.created_on,
+.created_by,
+.last_modified_by,
+.last_modified_on,
+.action_id,
+.equipment_id,
+.assoc_id,
+.defect_id,
+.id {
+  display: none;
+}
+
+/* comment table */
+
+.comments-table {
+  grid-column: 1 / -1;
+  margin: 2rem 0;
+}
+
+.commenter-form {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.comments-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  column-gap: 1rem;
+}
